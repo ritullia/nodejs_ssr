@@ -21,6 +21,10 @@ app.get("/info", (req, res) => {
   //   res.sendFile(dirHome); // su path suformuojam kelia iki kuriamo home page
   res.render("info");
 });
+app.get("/contacts", (req, res) => {
+  //   res.sendFile(dirHome); // su path suformuojam kelia iki kuriamo home page
+  res.render("contacts");
+});
 
 app.listen(3000, () => {
   console.log(`Server is running on port 3000`);
